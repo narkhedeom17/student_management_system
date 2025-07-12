@@ -1,0 +1,298 @@
+/* Reset Default Margins */
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Transparent Header */
+header {
+    background-color: transparent; /* Fully transparent */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+/* Brand (Logo + School Name) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Ensures minimal space between logo & name */
+}
+
+/* Logo Styling */
+.brand img {
+    width: 160px;
+    height: 90px;
+     
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    position: relative;
+    left: -200px; /* Adjust for precise left movement */
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(126, 149, 160);
+    border-radius: 5px;
+}
+
+/* Darkened Background Image */
+main img {
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    max-height: 1000px;
+    object-fit: cover;
+    filter: brightness(30%); /* Darkens the image */
+}
+main {
+    position: relative; /* Allows absolute positioning inside */
+}
+
+.about {
+    position: absolute;
+    top: 20%; /* Adjust position to move it up */
+    left:2%;
+    width: 80%;
+    color: white;
+     background-color: transparent;
+    padding: 90px;
+    border-radius: 8px;
+    text-align: left;
+    z-index: 10; /* Ensures it's above the background */
+}
+
+
+
+/* Ensure Heading, Paragraph, and Features Follow Left Alignment */
+.about h2
+{
+    font-size: 55px;
+    font-style: initial;
+   text-align: left;
+    width: 100%;
+    color:white;  
+} 
+.about p
+{
+    font-size:20px;
+     text-align:left;
+    width: 100%;
+    color:white;
+}
+h3 {
+    
+    position: absolute;
+    top: 110px; /* Moves heading higher */
+    right: -40px; /* Aligns it to the right */
+    font-size: 38px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Two items per row */
+    justify-content: end; /* Aligns grid to the right */
+    gap: 20px 40px; /* Ensures equal spacing */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 75%;
+    top: 170px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; /* Sets equal gap between icon and text */
+    text-align: right;
+    white-space: nowrap; /* Prevents wrapping issues */
+}
+.features-list img {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(126, 149, 160) ;
+    padding: 8px;
+    border-radius: 50%;
+    display: block;
+}.button-container {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent blur background */
+  backdrop-filter: blur(8px);           /* Blur effect */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Force hover color to blue */
+.button:hover {
+  background-color: rgb(9, 60, 86) !important; /* Blue */
+  backdrop-filter: none;
+  transform: translateY(-2px);
+  color: white;
+}
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width:100%;
+            height: 30%;
+            padding: 20px;
+            background-color:white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            background-color:rgb(228, 238, 242) ;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item h1 {
+            margin: 10px 0 0;
+            font-size: 2.5rem;
+            color:rgb(126, 149, 160);
+        }
+        .grid-item p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .grid-item i {
+            font-size: 2rem;
+            color: rgb(9, 60, 86);
+            margin-bottom: 10px;
+        }
+        
+    .footer {
+        width: 310%;
+      background: #111;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      width:100%;
+      margin: auto;
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+    }
+
+    .footer-col h3, .footer-col h4 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-col ul li a:hover {
+      color:rgb(126, 149, 160);
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      background: #222;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: rgb(126, 149, 160);
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #222;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .button {
+  display: inline-block;
+  padding: 12px 24px;
+  filter: blur(40%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: orange; /* Lighter blue on hover */
+  transform: translateY(-2px);
+}

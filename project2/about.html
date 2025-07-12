@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Newton House School</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 170px 20px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    h2 {
+      color: rgb(25, 25, 22);
+    }
+
+    .about-section {
+      background: linear-gradient(135deg,  rgb(150, 182, 198),  rgb(247, 248, 249));
+      padding: 60px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 50px;
+    }
+
+    .about-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      border-left: 5px solid rgb(9, 60, 86) ;
+      padding-left: 15px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      color:  rgb(126, 149, 160);
+      font-weight: bold;
+    }
+
+    .gallery {
+      margin-top: 40px;
+    }
+
+    .gallery h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.1);
+    }
+
+    .mission-vision {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .mission, .vision {
+      background-color: #ffffff;
+      padding: 30px;
+      border-left: 5px solid  rgb(9, 60, 86);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .mission h2, .vision h2 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .mission p, .vision p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .core-values {
+      margin-top: 50px;
+    }
+
+    .core-values h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .value-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color:  rgb(9, 60, 86);
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .about-section h1 {
+        font-size: 28px;
+      }
+
+      .mission-vision {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery h2, .core-values h2 {
+        font-size: 22px;
+      }
+
+      .about-section p, .mission p, .vision p {
+        font-size: 16px;
+      }
+    }
+
+    /* Footer Styling */
+    .footer {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+    }
+
+    .footer-col h3, .footer-col h4 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-col ul li a:hover {
+      color:  rgb(9, 60, 86);
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      background: #222;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.6s;
+    }
+
+    .social-icons a:hover {
+      background:  rgb(9, 60, 86);
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #222;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="brand">
+      <img src="assets/img/nw2.png" alt="Newton House School Logo" >
+      
+    </div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="cont.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="container">
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About Newton House School</h1>
+    <p><span class="highlight">Newton House School</span> is a center of academic excellence, innovation, and holistic development. We strive to cultivate a love for learning while empowering students with the skills to thrive in a global society.</p>
+    <p>With a dedicated faculty, vibrant co-curricular programs, and a nurturing environment, we help students discover their passions, build confidence, and develop strong character.</p>
+    <p>Our mission goes beyond textbooks — we focus on developing compassionate leaders and lifelong learners.</p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Life at Newton House</h2>
+    <div class="gallery-grid">
+      <img src="assets/img/h (1).jpg" alt="School Building">
+      <img src="assets/img/gallery/c (7).jpg" alt="Classrooms">
+      <img src="assets/img/gallery/c (1).jpg" alt="Science Lab">
+      <img src="assets/img/gallery/a (2).jpg" alt="Computer Lab">
+      <img src="assets/img/gallery/c (8).jpg" alt="Sports">
+      <img src="assets/img/h (2).jpg" alt="Library">
+    </div>
+  </section>
+
+  <!-- Mission & Vision -->
+  <section class="mission-vision">
+    <div class="mission">
+      <h2>Our Mission</h2>
+      <p>To inspire and empower every student to achieve personal and academic success while developing the confidence and skills needed for lifelong learning and responsible citizenship.</p>
+    </div>
+    <div class="vision">
+      <h2>Our Vision</h2>
+      <p>To be a leading educational institution known for academic excellence, innovation, and character education — shaping tomorrow’s leaders with compassion and curiosity.</p>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="core-values">
+    <h2>Our Core Values</h2>
+    <div class="value-cards">
+      <div class="card"><h3>Integrity</h3><p>We act with honesty, fairness, and respect for all.</p></div>
+      <div class="card"><h3>Excellence</h3><p>We pursue the highest standards in learning and behavior.</p></div>
+      <div class="card"><h3>Innovation</h3><p>We embrace creativity and forward-thinking approaches.</p></div>
+      <div class="card"><h3>Empathy</h3><p>We foster kindness, compassion, and understanding.</p></div>
+      <div class="card"><h3>Teamwork</h3><p>We value collaboration, unity, and shared success.</p></div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Newton House School</h3>
+      <p>123 Learning Avenue<br>Knowledge City, State, ZIP</p>
+      <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+      <p><strong>Email:</strong> info@newtonschool.edu</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Counseling</a></li>
+        <li><a href="#">Library</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Clubs</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Parent Portal</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Copyright <strong>Newton House School</strong>. All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

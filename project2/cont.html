@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Newton House School</title>
+  <link rel="stylesheet" href="header.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background:  rgb(245, 248, 249);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 170px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-info, .contact-form {
+      flex: 1 1 400px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-info h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: rgb(35, 30, 22);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      display: inline-block;
+    }
+
+    .contact-form form {
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 12px;
+      background-color:  rgb(9, 60, 86);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: orangered;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+
+    .footer {
+      background: #111;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-size: 0.95rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+    }
+
+    .footer-col h3, .footer-col h4 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-col ul li a:hover {
+      color: orange;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      background: #222;
+      padding: 10px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background:  rgb(9, 60, 86);
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #222;
+      margin-top: 30px;
+      padding-top: 15px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="assets\img\nw2.png" alt="Newton House School Logo">
+             
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                
+                
+              
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="container">
+    <h1>Contact Newton House School</h1>
+    <p class="subtitle">We’d love to hear from you. Reach us using the information or the form below.</p>
+
+    <div class="contact-wrapper">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2><img src="assets/img/icons/gps.png" alt="Address Icon" class="icon" /> School Address</h2>
+        <p>123 Learning Avenue<br>Knowledge City, State, ZIP</p>
+
+        <h2><img src="assets/img/icons/viber.png" alt="Phone Icon" class="icon" /> Phone</h2>
+        <p>+1 (234) 567-8901</p>
+
+        <h2><img src="assets/img/icons/mail.png" alt="Email Icon" class="icon" /> Email</h2>
+        <p>info@newtonschool.edu</p>
+
+        <h2><img src="assets/img/icons/clock.png" alt="Hours Icon" class="icon" /> School Hours</h2>
+        <p>Monday - Friday: 8:00 AM – 4:00 PM</p>
+
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4327879069423!2d72.60787107592715!3d23.008324579178498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c1e2e07f2d%3A0x98b1d837da1a4175!2sShiv%20Ashish%20School%2C%20Bopal%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1717441317104!5m2!1sen!2sin" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email Address" required />
+          <input type="text" name="subject" placeholder="Subject" />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Newton House School</h3>
+        <p>123 Learning Avenue<br>Knowledge City, State, ZIP</p>
+        <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+        <p><strong>Email:</strong> info@newtonschool.edu</p>
+        <div class="social-icons">
+          <a href="assets/img/twitter.png"><i class="fab fa-x-twitter"></i></a>
+          <a href="assets/img/facebook.png"><i class="fab fa-facebook-f"></i></a>
+          <a href="assets/img/social.png"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Academics</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Counseling</a></li>
+          <li><a href="#">Library</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Clubs</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Parent Portal</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© Copyright <strong>Newton House School</strong>. All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Transparent Header */
+header {
+    background-color:rgb(9, 60, 86); /* Fully transparent */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    width: 100%;
+}
+/* Brand (Logo + School Name) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Ensures minimal space between logo & name */
+}
+
+/* Logo Styling */
+.brand img {
+    width: 160px;
+    height: 90px;
+     
+}
+
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+    position: relative;
+    left: -200px; /* Adjust for precise left movement */
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(126, 149, 160);
+    border-radius: 5px;
+}

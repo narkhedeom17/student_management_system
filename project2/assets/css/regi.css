@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+  position: relative;
+}
+
+/* Background with darkness effect */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   background: linear-gradient(135deg, #f1954a, #ffffff);
+  /* This applies the dark effect */
+  z-index: 0;
+}
+
+/* Brand (Logo + School Name) */
+header {
+    /* Ensure correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand {
+    display: flex; /* Keeps logo and text aligned */
+    align-items: center; /* Centers them vertically */
+    gap: 15px; /* Space between logo and text */
+    position: absolute;
+    top: 50px; /* Positions at the top */
+    left: 80px; /* Aligns to the left */
+    z-index: 10; /* Ensures it's above the background */
+}
+
+
+  .brand img {
+    height: 80px;
+    opacity: 1; /* Fully visible */
+}
+.school-name {
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+}
+main {
+        background-image: url('assets/img/bgpro.jpg')!important;
+    background-repeat: repeat-y; /* Repeats vertically */
+    background-size: contain; /* Ensures full image shows each time */
+    height: 200vh; 
+}
+
+main img {
+    width: 100%;
+   
+    display: block;
+transform: translate(0%,-10%);
+height: 110% !important;
+    background-color: rgb(3, 3, 3);
+    
+    object-fit: cover;
+    filter: brightness(40%); /* Darkens the image */
+}
+.container h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    background-color:orange;
+    height:50px;
+    width: 800px;
+    margin:auto;
+     padding:10px;
+     
+      box-shadow: 10px 10px 20px rgba(159, 94, 37, 0.8); 
+     
+     border-color:rgb(56, 49, 49);
+     border-radius:30%;
+
+}
+
+.container h2{
+ text-align: center;
+ color:rgb(31, 38, 62);  
+  background-color:#ffffff;  
+   width: 40%;
+   border-radius:40px;
+    margin:auto;
+     padding:10px;
+     box-shadow: 10px 10px 20px rgba(126, 70, 42, 0.8); 
+     
+    
+
+
+}
+input[type="radio"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+label {
+    display: inline-block;
+    margin-right: 20px;
+}
+input{
+    margin-right: 80px;
+    border-radius:5px;
+    height: 30px;
+}
+
+    
+
+.container{
+    
+    
+
+transform: translate(17%,-5%);
+
+     position: absolute; 
+     background: rgba(255, 255, 255, 0.85);              
+     min-height: 1500px;
+    overflow-y: auto;
+    width:1300px;
+    background-color:rgb(255, 244, 233);
+    border:none;
+    border-radius:20px;
+    padding:50px;
+    margin:auto;
+    color: #1f1d1d;
+}
+.container button{
+   height:50px;
+  width:80px;
+  background-color:orange;  
+  border: none;
+  gap:10px;
+  border-radius:20px;
+  color:whitesmoke;
+  font-size: medium;
+   text-align: center;
+   margin: 50px;
+   margin-left:25%;
+    box-shadow: 10px 10px 20px rgba(234, 177, 124, 0.8); 
+}
